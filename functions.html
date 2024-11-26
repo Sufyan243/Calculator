@@ -3,81 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Basic Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .output {
+            background-color: #fff;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .output p {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Functions
-    </h1>
-    <script>
-        let user_input = prompt("Enter No1");
-        let no1 = parseFloat(user_input);
-        let user_input2 = prompt("Enter No2");
-        let no2 = parseFloat(user_input2);
-        
-        
-        // ADDITION USING NON PARAMETRIZE FUNCTION
-        document.write(`1)Addition of numbers using NON PARAMETRIZE FUNCTION`)
-        function add (){
-    
-            return ` ${no1} + ${no2} is equal to ${no1 + no2}`
-        }
-        document.write("<br>");
-        document.write(add());
-        document.write("<br>");
-// ----------------------------------------------------------------------------------------------------------------------------
+    <h1>Basic Calculator</h1>
+    <div class="output">
+    </div>
 
-
-            // SUBTRACTION USING  PARAMETRIZE FUNCTION
-            document.write(`<br>2)subtraction of numbers using  PARAMETRIZE FUNCTION`)
-        function sub (no1,no2){
-            return`${no1} - ${no2} is equal to ${no1 - no2}`
-
-        }
-        document.write("<br>");
-        document.write(sub(no1,no2));
-        document.write("<br>");
-
-    // ----------------------------------------------------------------------------------------------------------------------------
-
-
-
-                    // MULTIPLICATION USING HOISTED FUNCTION
-                    document.write(`<br>3)Multiplication of numbers using  Hoisted FUNCTION`)
-                    document.write("<br>");
-
-                    document.write(mul(no1,no2));
-                    document.write("<br>");
-
-        function mul (no1,no2){
-            return`${no1} * ${no2} is equal to ${no1 * no2}`
-            document.write("<br>");
-
-
-        }
-        // ----------------------------------------------------------------------------------------------------------------------------
-
- 
-
-
-
-                            // DIVISION USING ARROW FUNCTION
-document.write("<br>4)Division of numbers using Arrow function")
-let divide =  (no1,no2) => {return `${no1} / ${no2} is equal to ${no1/no2}`}
-document.write("<br>",divide(no1,no2))
-document.write("<br>");
-
-// ----------------------------------------------------------------------------------------------------------------------------
-
-
-
-        // MODULUS USING ANONYMOUS FUNCTION
-        document.write("<br>5)Modulus of numbers using Anonymous function")
-
-        let mod = () => {return`${no1} % ${no2 } is equal to ${no1 % no2}`}
-        document.write("<br>",mod())
-// ----------------------------------------------------------------------------------------------------------------------------
-
-    </script>
-    
+    <script src="script.js"></script>
 </body>
 </html>
